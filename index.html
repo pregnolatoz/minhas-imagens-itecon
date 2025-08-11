@@ -35,21 +35,22 @@
     <h1>Minhas Imagens</h1>
     <div class="gallery" id="gallery"></div>
 
-    <script>
-        // Lista de imagens que você colocar na pasta "uploads"
-        const imagens = [
-            "logo powerpoint.png",
-            "LOGO ITECON DIMENSAO MAIOR.png",
-            "cidade.png",
-            "9e235ccb-7619-4d21-a5ec-ec9c16129be8",
-        ];
+     <script>
+    const imagens = [
+        "logo%20powerpoint.png", // ou renomeie para logo-powerpoint.png
+        "LOGO%20ITECON%20DIMENSAO%20MAIOR.png",
+        "cidade.png",
+        "9e235ccb-7619-4d21-a5ec-ec9c16129be8.png"
+    ];
 
-        const gallery = document.getElementById("gallery");
-        imagens.forEach(img => {
-            const imageElement = document.createElement("img");
-            imageElement.src = img;
-            gallery.appendChild(imageElement);
-        });
-    </script>
+    const gallery = document.getElementById("gallery");
+    imagens.forEach(img => {
+        const imageElement = document.createElement("img");
+        imageElement.src = img; // raiz do repositório
+        gallery.appendChild(imageElement);
+    });
+</script>
+
 </body>
 </html>
+
